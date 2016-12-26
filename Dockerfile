@@ -65,7 +65,7 @@ RUN mkdir /var/cache/nginx
 RUN apk add php5-memcached --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/bin/composer
-RUN composer global require "fxp/composer-asset-plugin:~1.1.3"
+RUN composer global require "fxp/composer-asset-plugin:~1.2"
 
 ENV PATH /root/.composer/vendor/bin:$PATH
 RUN npm install -g bower
